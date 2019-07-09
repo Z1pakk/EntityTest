@@ -52,12 +52,22 @@
   <ItemGroup>
     <Compile Include="Entities\Animal.cs" />
     <Compile Include="Entities\EFContext.cs" />
+    <Compile Include="Migrations\201907091542347_Add new table tblAnimals.cs" />
+    <Compile Include="Migrations\201907091542347_Add new table tblAnimals.Designer.cs">
+      <DependentUpon>201907091542347_Add new table tblAnimals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201907091542347_Add new table tblAnimals.resx">
+      <DependentUpon>201907091542347_Add new table tblAnimals.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,5 +13,7 @@ namespace EntityFrameworkConsole.Entities
         {
 
         }
+
+        public DbSet<Animal> Animals { get; set; }
     }
 }
